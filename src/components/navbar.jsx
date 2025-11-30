@@ -17,13 +17,16 @@ export const Navbar = () => {
           <button aria-expanded="false">Projects</button>
           <ul className="sub-menu" aria-label="Projects">
             <li>
-              <Link to="/projects/footballer">Footballer Search</Link>
+              <Link to="/footballer-search">Footballer Search</Link>
             </li>
             <li>
-              <Link to="/projects/fruit">Fruit Search</Link>
+              <Link to="/fruit-search">Fruit Search</Link>
             </li>
             <li>
-              <Link to="/projects/fruit">Fruit Search</Link>
+              <Link to="/otp-generator">Fruit Search</Link>
+            </li>
+            <li>
+              <Link to="/color-picker">Fruit Search</Link>
             </li>
           </ul>
         </li>
