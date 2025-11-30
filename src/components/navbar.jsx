@@ -23,10 +23,10 @@ export const Navbar = () => {
               <Link to="/fruit-search">Fruit Search</Link>
             </li>
             <li>
-              <Link to="/otp-generator">Fruit Search</Link>
+              <Link to="/otp-generator">OTP Generator</Link>
             </li>
             <li>
-              <Link to="/color-picker">Fruit Search</Link>
+              <Link to="/color-picker">Color Picker</Link>
             </li>
           </ul>
         </li>

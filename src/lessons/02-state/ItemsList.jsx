@@ -9,7 +9,7 @@ function ItemList() {
 
   const addItem = () => {
     const newItem = {
-      id: items.length + 1,
+      id: Date.now(),
       name: `Item ${items.length + 1}`,
     };
 

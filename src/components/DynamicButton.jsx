@@ -2,7 +2,7 @@ import "../styles/index.css";
 
 function DynamicButton({isActive}) {
   const buttonStyle = {
-    backgrounColor: isActive ? 'green' : 'red',
+    backgroundColor: isActive ? 'green' : 'red',
     color: 'white',
     padding: '10px 20px',
     border: 'none',
