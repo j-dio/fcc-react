@@ -28,6 +28,9 @@ export const Navbar = () => {
             <li>
               <Link to="/color-picker">Color Picker</Link>
             </li>
+            <li>
+              <Link to="/superhero-form">Superhero Application Form</Link>
+            </li>
           </ul>
         </li>
       </ul>

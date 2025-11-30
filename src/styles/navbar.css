@@ -1,5 +1,6 @@
 .navbar {
-  background-color: var(--card-bg);
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  backdrop-filter: blur(10px); /* Glass effect */
   border-bottom: 1px solid var(--border-color);
   padding: 0 2rem;
   position: sticky;
@@ -8,9 +9,16 @@
   box-shadow: var(--shadow-sm);
 }
 
+/* Dark mode glass support */
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: rgba(30, 41, 59, 0.9); 
+  }
+}
+
 .navbar ul {
   display: flex;
-  justify-content: center; /* Centered nav */
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   max-width: 1280px;
@@ -19,20 +27,26 @@
 
 .navbar ul li {
   list-style: none;
-  position: relative; /* Essential for dropdown positioning */
+  position: relative;
 }
 
-.navbar ul li a {
+.navbar ul li a,
+.navbar ul li button {
   text-decoration: none;
   color: var(--text-main);
-  padding: 1.5rem 1rem; /* Taller click area */
+  padding: 1.5rem 1rem;
   display: inline-block;
   font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover,
+.navbar ul li button:hover {
   color: var(--primary);
-  background-color: transparent; /* Removed blocky background color */
 }
 
 /* Dropdown Menu */
@@ -40,17 +54,17 @@
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: 100%; /* Pushes it exactly below the nav item */
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(10px); /* Centers it relative to parent */
+  transform: translateX(-50%) translateY(10px);
   
   background-color: var(--card-bg);
-  min-width: 200px;
+  min-width: 220px; /* Slightly wider */
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  padding: 0.5rem 0;
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow-lg);
+  padding: 0.5rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1); /* Snappy transition */
   z-index: 1001;
 }
 
@@ -58,7 +72,7 @@
 .navbar ul .nav-item:focus-within .sub-menu {
   visibility: visible;
   opacity: 1;
-  transform: translateX(-50%) translateY(0); /* Smooth slide up effect */
+  transform: translateX(-50%) translateY(0);
 }
 
 .navbar ul .nav-item .sub-menu li {
@@ -66,10 +80,11 @@
 }
 
 .navbar ul .nav-item .sub-menu a {
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1rem;
   display: block;
   font-size: 0.9rem;
   color: var(--text-muted);
+  border-radius: 4px;
 }
 
 .navbar ul .nav-item .sub-menu a:hover {

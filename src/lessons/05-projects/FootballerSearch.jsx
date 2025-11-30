@@ -20,6 +20,7 @@ const FootballerSearch = () => {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>Footballer Search App</h1>
+      <p>Look at the console...</p> <br />
       <div style={{ textAlign: "center" }}>
         <input
           style={{ padding: "0.5rem", width: "30%" }}

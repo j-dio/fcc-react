@@ -4,10 +4,11 @@ import { Navbar } from "./components/navbar";
 
 import Home from "./pages/Home";
 
-import { FootballerSearch } from "./lessons/05-projects/FootballerSearch";
-import { FruitSearch } from "./lessons/05-projects/FruitSearch";
+import FootballerSearch from "./lessons/05-projects/FootballerSearch";
+import FruitSearch from "./lessons/05-projects/FruitSearch";
 import { ColorPicker } from "./lessons/05-projects/ColorPicker";
 import { OTPGenerator } from "./lessons/04-hooks-deep-dive/OTPGenerator";
+import { SuperheroForm } from "./lessons/05-projects/SuperheroApplicationForm";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/fruit-search" element={<FruitSearch />} />
         <Route path="/color-picker" element={<ColorPicker />} />
         <Route path="/otp-generator" element={<OTPGenerator />} />
+        <Route path="/superhero-form" element={<SuperheroForm />} />
       </Routes>
     </>
   )
