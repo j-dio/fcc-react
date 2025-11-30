@@ -18,6 +18,7 @@ import ItemList from "./lessons/02-state/ItemsList";
 // Forms
 import SimpleForm from "./lessons/03-forms/SimpleForm";
 import Greeter from "./lessons/03-forms/Greeter";
+import FetchUsers from "./lessons/03-forms/FetchUsers";
 
 // Hooks
 import FocusInput from "./lessons/04-hooks-deep-dive/FocusInput";
@@ -31,7 +32,7 @@ function App() {
   const developerObj = {
     name: "Dio",
     age: 20,
-    country: "Italy"
+    country: "Italy",
   };
 
   return (
@@ -40,32 +41,38 @@ function App() {
       <main>
         <section>
           <h2>Fundamentals</h2>
-          <Greeting nameProp="Bob" ageProp={19} countryProp="Philippines" />
-          <Developer {...developerObj} />
-          <Cat />
-          <UserList />
+          <Greeting
+            nameProp="Bob"
+            ageProp={19}
+            countryProp="Philippines"
+          />{" "}
+          <br />
+          <Developer {...developerObj} /> <br />
+          <Cat /> <br />
+          <UserList /> <br />
         </section>
-
+        <br />
         <section>
           <h2>State</h2>
-          <Counter />
-          <DynamicButton />
-          <UserProfile />
-          <ItemList />
+          <Counter /> <br />
+          <DynamicButton /> <br />
+          <UserProfile /> <br />
+          <ItemList /> <br />
         </section>
-
+        <br />
         <section>
           <h2>Hooks & Forms</h2>
-          <FocusInput />
-          <EffectCounter />
-          <SimpleForm />
-          <Greeter />
-        </section>
-        
+          <FocusInput /> <br />
+          <EffectCounter /> <br />
+          <SimpleForm /> <br />
+          <Greeter /> <br />
+          <FetchUsers /> <br />
+        </section> 
+        <br />
         <section>
           <h2>Mini Projects</h2>
-          <FootballerSearch />
-          <FruitSearch />
+          <FootballerSearch /> <br />
+          <FruitSearch /> <br />
         </section>
       </main>
     </>
