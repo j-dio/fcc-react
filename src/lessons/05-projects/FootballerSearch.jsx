@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { useDebounce } from "../hooks/useDebounce";
-import footballers from "./Footballers";
+import { useDebounce } from "../../hooks/useDebounce";
+import footballers from "../../data/footballers";
 
 const FootballerSearch = () => {
   const [query, setQuery] = useState("");

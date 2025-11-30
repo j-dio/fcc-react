@@ -15,7 +15,7 @@ function Button({buttonText}) {
 
 // It's important to note that while CSS property names are typically written in kebab case, like font-size, in React's inline styles, we use camel case, like fontSize.
 
-import "../index.css";
+import "../styles/index.css";
 
 function Button({ buttonText }) {
   const defaultStyles = {

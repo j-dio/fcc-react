@@ -1,46 +1,73 @@
-import "./App.css";
-import Greeting from "./components/greeting.jsx";
-import Cat from "./components/cat.jsx";
-import { Navbar } from "./components/navbar.jsx";
-import Developer from "./components/developer.jsx";
-import User from "./components/UserList.jsx"
-import DynamicButton from "./components/DynamicButton.jsx";
-import Counter from "./components/Counter.jsx";
-import UserProfile from "./components/RefactoredUserProfile.jsx";
-import ItemList from "./components/ItemsList.jsx";
-import InputRef from "./components/UseRef.jsx";
-import UseEffectCounter from "./components/UseEffect.jsx"
-import FootballerSearch from "./components/FootBallerSearchUsingDebounceHook.jsx";
-import FruitSearch from "./freeCodeCampLabs&WS/state&hooks&routing/FruitSearchApp.jsx";
-import Form from "./components/Forms.jsx";
-import Greeter  from "./components/UseActionSatate.jsx";
+import "./styles/App.css";
+
+// Components
+import { Navbar } from "./components/Navbar";
+import DynamicButton from "./components/DynamicButton";
+
+// Fundamentals
+import Greeting from "./lessons/01-fundamentals/Greeting";
+import Cat from "./lessons/01-fundamentals/Cat";
+import Developer from "./lessons/01-fundamentals/Developer";
+import UserList from "./lessons/01-fundamentals/UserList";
+
+// State
+import Counter from "./lessons/02-state/Counter";
+import UserProfile from "./lessons/02-state/UserProfile";
+import ItemList from "./lessons/02-state/ItemsList";
+
+// Forms
+import SimpleForm from "./lessons/03-forms/SimpleForm";
+import Greeter from "./lessons/03-forms/Greeter";
+
+// Hooks
+import FocusInput from "./lessons/04-hooks-deep-dive/FocusInput";
+import EffectCounter from "./lessons/04-hooks-deep-dive/EffectCounter";
+
+// Projects
+import FootballerSearch from "./lessons/05-projects/FootballerSearch";
+import FruitSearch from "./lessons/05-projects/FruitSearch";
 
 function App() {
-
   const developerObj = {
     name: "Dio",
     age: 20,
     country: "Italy"
-  }
+  };
 
   return (
     <>
       <Navbar />
-      <Greeting nameProp="Bob the fucking Builder" ageProp={19} countryProp="Philippines" />
-      <Greeting nameProp="Alice in Wonderland" ageProp={17} countryProp="USA"/>
-      <Developer {...developerObj} />
-      <Cat />
-      <User />
-      <DynamicButton />
-      <Counter />
-      <UserProfile />
-      <ItemList />
-      <InputRef />
-      <UseEffectCounter />
-      <FootballerSearch />
-      <FruitSearch />
-      <Form />
-      <Greeter />
+      <main>
+        <section>
+          <h2>Fundamentals</h2>
+          <Greeting nameProp="Bob" ageProp={19} countryProp="Philippines" />
+          <Developer {...developerObj} />
+          <Cat />
+          <UserList />
+        </section>
+
+        <section>
+          <h2>State</h2>
+          <Counter />
+          <DynamicButton />
+          <UserProfile />
+          <ItemList />
+        </section>
+
+        <section>
+          <h2>Hooks & Forms</h2>
+          <FocusInput />
+          <EffectCounter />
+          <SimpleForm />
+          <Greeter />
+        </section>
+        
+        <section>
+          <h2>Mini Projects</h2>
+          <FootballerSearch />
+          <FruitSearch />
+        </section>
+      </main>
     </>
   );
 }
