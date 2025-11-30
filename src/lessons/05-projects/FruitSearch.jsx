@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./projectStyles/fruitSearch.css"
 
 function FruitSearch() {
   const [query, setQuery] = useState("");

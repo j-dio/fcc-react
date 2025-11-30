@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link
 import "../styles/navbar.css";
 
 export const Navbar = () => {
@@ -5,20 +6,28 @@ export const Navbar = () => {
     <nav className="navbar">
       <ul>
         <li className="nav-item">
-          <a href='#'>Dashboard</a>
+          <Link to="/">Dashboard</Link> {/* Link to Home */}
         </li>
         <li className="nav-item">
           <a href="#">Widgets</a>
         </li>
+
+        {/* Dropdown Menu */}
         <li className="nav-item">
-          <button aria-expanded="false">Apps</button>
-          <ul className="sub-menu" aria-label="Apps">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+          <button aria-expanded="false">Projects</button>
+          <ul className="sub-menu" aria-label="Projects">
+            <li>
+              <Link to="/projects/footballer">Footballer Search</Link>
+            </li>
+            <li>
+              <Link to="/projects/fruit">Fruit Search</Link>
+            </li>
+            <li>
+              <Link to="/projects/fruit">Fruit Search</Link>
+            </li>
           </ul>
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
