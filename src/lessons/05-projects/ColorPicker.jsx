@@ -1,4 +1,5 @@
 import React from "react";
+import "./projectStyles/colorPicker.css"
 const { useState } = React;
 
 export const ColorPicker = () => {
