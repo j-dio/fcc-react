@@ -1,0 +1,78 @@
+.navbar {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Centered nav */
+  align-items: center;
+  gap: 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.navbar ul li {
+  list-style: none;
+  position: relative; /* Essential for dropdown positioning */
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-main);
+  padding: 1.5rem 1rem; /* Taller click area */
+  display: inline-block;
+  font-weight: 500;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary);
+  background-color: transparent; /* Removed blocky background color */
+}
+
+/* Dropdown Menu */
+.navbar ul .nav-item .sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%; /* Pushes it exactly below the nav item */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Centers it relative to parent */
+  
+  background-color: var(--card-bg);
+  min-width: 200px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.navbar ul .nav-item:hover .sub-menu,
+.navbar ul .nav-item:focus-within .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* Smooth slide up effect */
+}
+
+.navbar ul .nav-item .sub-menu li {
+  width: 100%;
+}
+
+.navbar ul .nav-item .sub-menu a {
+  padding: 0.75rem 1.5rem;
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.navbar ul .nav-item .sub-menu a:hover {
+  color: var(--primary);
+  background-color: var(--bg-color);
+}
