@@ -9,6 +9,7 @@ import FruitSearch from "./lessons/05-projects/FruitSearch";
 import { ColorPicker } from "./lessons/05-projects/ColorPicker";
 import { OTPGenerator } from "./lessons/04-hooks-deep-dive/OTPGenerator";
 import { SuperheroForm } from "./lessons/05-projects/SuperheroApplicationForm";
+import { EventRSVPForm } from "./lessons/05-projects/EventRSVP";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/color-picker" element={<ColorPicker />} />
         <Route path="/otp-generator" element={<OTPGenerator />} />
         <Route path="/superhero-form" element={<SuperheroForm />} />
+        <Route path="/rsvp-form" element={<EventRSVPForm />} />
       </Routes>
     </>
   )

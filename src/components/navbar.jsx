@@ -31,6 +31,9 @@ export const Navbar = () => {
             <li>
               <Link to="/superhero-form">Superhero Application Form</Link>
             </li>
+            <li>
+              <Link to="/rsvp-form">Event RSVP</Link>
+            </li>
           </ul>
         </li>
       </ul>
