@@ -7,6 +7,7 @@ function Cat() {
       <img
         src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg"
         alt="Tuxedo cats running on dirt ground."
+        style={{ width: "50%" }}
       />
     </div>
   );
