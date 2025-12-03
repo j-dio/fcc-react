@@ -1,4 +1,4 @@
-import "../styles/App.css";
+import "../styles/Home.css";
 
 // Fundamentals
 import Greeting from "../lessons/01-fundamentals/Greeting";
@@ -19,6 +19,7 @@ import FetchUsers from "../lessons/03-forms/FetchUsers";
 // Hooks
 import FocusInput from "../lessons/04-hooks-deep-dive/FocusInput";
 import EffectCounter from "../lessons/04-hooks-deep-dive/EffectCounter";
+import FetchPosts from "../lessons/04-hooks-deep-dive/FetchPosts";
 
 
 function Home() {
@@ -27,18 +28,46 @@ function Home() {
   return (
     <div className="home-container">
       <h1>React Lessons Dashboard</h1>
-      <Greeting nameProp="Bob" ageProp={19} countryProp="Ph" />
-      <Developer {...developerObj} />
-      <Cat />
-      <UserList />
-      <Counter />
-      <SimpleForm />
-      <Greeter />
-      <FetchUsers />
-      <FocusInput />
-      <EffectCounter />
-      <UserProfile />
-      <ItemList />
+      <div className="lessons-grid">
+
+        <div className="lesson-category">
+          <h2>Fundamentals</h2>
+          <div className="lesson-content">
+            <Greeting nameProp="Bob" ageProp={19} countryProp="Ph" />
+            <Developer {...developerObj} />
+            <Cat />
+            <UserList />
+          </div>
+        </div>
+
+        <div className="lesson-category">
+          <h2>State Management</h2>
+          <div className="lesson-content">
+            <Counter />
+            <UserProfile />
+            <ItemList />
+          </div>
+        </div>
+
+        <div className="lesson-category">
+          <h2>Forms</h2>
+          <div className="lesson-content">
+            <SimpleForm />
+            <Greeter />
+            <FetchUsers />
+          </div>
+        </div>
+
+        <div className="lesson-category">
+          <h2>Hooks Deep Dive</h2>
+          <div className="lesson-content">
+            <FocusInput />
+            <EffectCounter />
+            <FetchPosts />
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }
