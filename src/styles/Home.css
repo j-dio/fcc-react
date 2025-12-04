@@ -42,3 +42,8 @@
   gap: 1rem;
   color: black;
 }
+
+button {
+  padding: 2px 5px;
+  margin: 5px 5px;
+}

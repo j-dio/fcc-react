@@ -2,7 +2,7 @@ import useFetch from "../../hooks/useFetch";
 
 const FetchPosts = () => {
   const { data, loading, error } = useFetch(
-    "https://jsonplaceholder.typicode.com/todos"
+    "https://jsonplaceholder.typicode.com/todos?_limit=10"
   );
 
   if (loading) {
