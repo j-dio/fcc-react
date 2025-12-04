@@ -21,6 +21,7 @@ import FocusInput from "../lessons/04-hooks-deep-dive/FocusInput";
 import EffectCounter from "../lessons/04-hooks-deep-dive/EffectCounter";
 import FetchPosts from "../lessons/04-hooks-deep-dive/FetchPosts";
 import Tasks from "../lessons/04-hooks-deep-dive/Tasks";
+import CalculateSquare from "../lessons/04-hooks-deep-dive/CalculateSquare";
 
 function Home() {
   const developerObj = { name: "Dio", age: 20, country: "Italy" };
@@ -70,6 +71,7 @@ function Home() {
           <h2>Hooks Part 2</h2>
           <div className="lesson-content">
             <Tasks />
+            <CalculateSquare />
           </div>
         </div>
       </div>
