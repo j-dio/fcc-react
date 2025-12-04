@@ -1,0 +1,69 @@
+/* Container: max-w-md mx-auto p-4 */
+.task-container {
+  max-width: 28rem; /* approx 450px */
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Heading: text-xl font-medium mb-3 */
+.task-header {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+}
+
+/* List: space-y-2 mb-4 */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Handles the space-y-2 */
+}
+
+/* List Item: p-2 border-b */
+.task-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid #e5e7eb; /* Tailwind gray-200 */
+  display: flex;
+  align-items: center;
+}
+
+/* Pending Text: ml-2 text-gray-500 text-sm */
+.task-pending {
+  margin-left: 0.5rem;
+  color: #6b7280; /* Tailwind gray-500 */
+  font-size: 0.875rem;
+}
+
+/* Form: flex gap-2 */
+.task-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Input: flex-1 p-2 border */
+.task-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem; /* Optional: adds slight rounding */
+}
+
+/* Button: bg-gray-200 px-3 py-2 cursor-pointer */
+.task-button {
+  background-color: black;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.task-button:hover {
+  background-color: #d1d5db; /* Darkens slightly on hover */
+}
