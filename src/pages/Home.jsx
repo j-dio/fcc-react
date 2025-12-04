@@ -21,6 +21,7 @@ import FocusInput from "../lessons/04-hooks-deep-dive/FocusInput";
 import EffectCounter from "../lessons/04-hooks-deep-dive/EffectCounter";
 import FetchPosts from "../lessons/04-hooks-deep-dive/FetchPosts";
 import Tasks from "../lessons/04-hooks-deep-dive/Tasks";
+import CalculateSquare from "../lessons/04-hooks-deep-dive/CalculateSquare";
 
 
 function Home() {
@@ -72,6 +73,7 @@ function Home() {
           <h2>Hooks Part 2</h2>
           <div className="lesson-content">
             <Tasks />
+            <CalculateSquare />
           </div>
         </div>
 

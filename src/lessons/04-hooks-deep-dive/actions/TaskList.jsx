@@ -22,7 +22,7 @@ export default function TaskList({ tasks, addTask }) {
 
   return (
     <div className="task-container">
-      <h3 className="task-header">Tasks</h3>
+      <h3 className="task-header" style={{color: "black"}}>Tasks</h3>
       
       <ul className="task-list">
         {optimisticTasks.map((task, index) => (
