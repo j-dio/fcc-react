@@ -22,7 +22,6 @@ import EffectCounter from "../lessons/04-hooks-deep-dive/EffectCounter";
 import FetchPosts from "../lessons/04-hooks-deep-dive/FetchPosts";
 import Tasks from "../lessons/04-hooks-deep-dive/Tasks";
 
-
 function Home() {
   const developerObj = { name: "Dio", age: 20, country: "Italy" };
 
@@ -30,7 +29,6 @@ function Home() {
     <div className="home-container">
       <h1>React Lessons Dashboard</h1>
       <div className="lessons-grid">
-
         <div className="lesson-category">
           <h2>Fundamentals</h2>
           <div className="lesson-content">
@@ -74,7 +72,6 @@ function Home() {
             <Tasks />
           </div>
         </div>
-
       </div>
     </div>
   );

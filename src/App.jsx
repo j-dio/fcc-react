@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import "./styles/App.css"
+import "./styles/App.css";
 import { Navbar } from "./components/navbar";
 
 import Home from "./pages/Home";
@@ -26,7 +26,7 @@ function App() {
         <Route path="/rsvp-form" element={<EventRSVPForm />} />
       </Routes>
     </>
-  )
+  );
 }
 
 export default App;
