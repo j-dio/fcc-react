@@ -22,6 +22,7 @@ import EffectCounter from "../lessons/04-hooks-deep-dive/EffectCounter";
 import FetchPosts from "../lessons/04-hooks-deep-dive/FetchPosts";
 import Tasks from "../lessons/04-hooks-deep-dive/Tasks";
 import CalculateSquare from "../lessons/04-hooks-deep-dive/CalculateSquare";
+import CounterCallback from "../lessons/04-hooks-deep-dive/Counter";
 
 function Home() {
   const developerObj = { name: "Dio", age: 20, country: "Italy" };
@@ -72,6 +73,7 @@ function Home() {
           <div className="lesson-content">
             <Tasks />
             <CalculateSquare />
+            <CounterCallback />
           </div>
         </div>
       </div>
