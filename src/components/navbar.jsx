@@ -34,6 +34,9 @@ export const Navbar = () => {
             <li>
               <Link to="/rsvp-form">Event RSVP</Link>
             </li>
+            <li>
+              <Link to="/shopping-list">Shopping List</Link>
+            </li>
           </ul>
         </li>
       </ul>
