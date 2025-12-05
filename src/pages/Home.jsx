@@ -33,7 +33,6 @@ function Home() {
     <div className="home-container">
       <h1>React Lessons Dashboard</h1>
       <div className="lessons-grid">
-
         <div className="lesson-category">
           <h2>Fundamentals</h2>
           <div className="lesson-content">
@@ -79,7 +78,6 @@ function Home() {
             <CounterCallback />
           </div>
         </div>
-
       </div>
     </div>
   );
