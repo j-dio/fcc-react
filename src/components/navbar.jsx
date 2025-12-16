@@ -37,6 +37,12 @@ export const Navbar = () => {
             <li>
               <Link to="/shopping-list">Shopping List</Link>
             </li>
+            <li>
+              <Link to="/react-dev-tools">React Dev Tools</Link>
+            </li>
+            <li>
+              <Link to="/currency-converter">Currency Converter</Link>
+            </li>
           </ul>
         </li>
       </ul>

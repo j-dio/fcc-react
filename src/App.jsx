@@ -11,6 +11,8 @@ import { OTPGenerator } from "./lessons/04-hooks-deep-dive/OTPGenerator";
 import { SuperheroForm } from "./lessons/05-projects/SuperheroApplicationForm";
 import { EventRSVPForm } from "./lessons/05-projects/EventRSVP";
 import { ShoppingList } from "./lessons/05-projects/ShoppingList";
+import ReactDevToolsSample from "./lessons/06-react-strats-&-debugging/ReactDevToolsSample";
+import { CurrencyConverter } from "./lessons/05-projects/CurrencyConverter";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/superhero-form" element={<SuperheroForm />} />
         <Route path="/rsvp-form" element={<EventRSVPForm />} />
         <Route path="/shopping-list" element={<ShoppingList />} />
+        <Route path="/react-dev-tools" element={<ReactDevToolsSample />} />
+        <Route path="/currency-converter" element={<CurrencyConverter />} />
       </Routes>
     </>
   );
