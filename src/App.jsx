@@ -13,6 +13,7 @@ import { EventRSVPForm } from "./lessons/05-projects/EventRSVP";
 import { ShoppingList } from "./lessons/05-projects/ShoppingList";
 import ReactDevToolsSample from "./lessons/06-react-strats-&-debugging/ReactDevToolsSample";
 import { CurrencyConverter } from "./lessons/05-projects/CurrencyConverter";
+import { TicTacToe } from "./lessons/05-projects/TicTacToe";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/shopping-list" element={<ShoppingList />} />
         <Route path="/react-dev-tools" element={<ReactDevToolsSample />} />
         <Route path="/currency-converter" element={<CurrencyConverter />} />
+        <Route path="/tic-tac-toe" element={<TicTacToe />} />
       </Routes>
     </>
   );

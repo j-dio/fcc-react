@@ -43,6 +43,9 @@ export const Navbar = () => {
             <li>
               <Link to="/currency-converter">Currency Converter</Link>
             </li>
+            <li>
+              <Link to="/tic-tac-toe">Tic Tac Toe</Link>
+            </li>
           </ul>
         </li>
       </ul>
